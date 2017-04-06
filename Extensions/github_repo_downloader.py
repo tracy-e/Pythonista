@@ -11,6 +11,8 @@ import random
 import re
 import clipboard
 
+download_dir = '../../Github/'
+
 if appex.is_running_extension():
 	url = appex.get_url()
 else:
@@ -30,14 +32,14 @@ url = url_format.format(user=user, repo=repo)
 
 print(url)
 
-downloadname = '../Github/' + str(random.randint(0x000000, 0xFFFFFF)) + "_master.zip"
+downloadname = download_dir + str(random.randint(0x000000, 0xFFFFFF)) + "_master.zip"
 
 print("Downloading...")
 urllib.request.urlretrieve(url, downloadname)
 
 print("Extracting...")
 zipped = zipfile.ZipFile(downloadname, 'r')
-zipped.extractall('../Github/')
+zipped.extractall(download_dir)
 zipped.close()
 
 print("Cleaning up...")
