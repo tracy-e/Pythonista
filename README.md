@@ -10,6 +10,10 @@ Scripts work as App Extensions which you can "Run Pythonista Script" in other Ap
 
 Scripts work as Today Widget.
 
+## [Workflow](https://github.com/tracy-e/Pythonista/tree/master/Workflow)
+
+Scripts work with the Workflow App where you can "Run Script".
+
 ## [Utils](https://github.com/tracy-e/Pythonista/tree/master/Utils)
 
 Scripts used within the Pythonista App.
