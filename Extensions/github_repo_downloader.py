@@ -18,7 +18,7 @@ if appex.is_running_extension():
 else:
 	url = clipboard.get()
 
-m = re.match((r'^http(s?)://([\w-]*\.)?github\.com/(?P<user>[\w-]+)/(?P<repo>[\w-]*)'
+m = re.match((r'^http(s?)://([\w-]*\.)?github\.com/(?P<user>[\w-]+)/(?P<repo>[\.\w-]*)'
                  '((/tree|/blob)/(?P<branch>[\w-]*))?'), url)
 if m is not None:
 	user = m.groupdict()['user']

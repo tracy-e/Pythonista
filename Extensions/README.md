@@ -9,3 +9,7 @@ As an App Extension to download current shown Github repository in the browser(S
 ## Markdown Preview
 
 As an App Extension to preview markdown files as HTML.
+
+## Qiniu Storage
+
+Use [Qiniu](http://qiniu.com) as figure bed.
